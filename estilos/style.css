@@ -1,0 +1,116 @@
+@charset "UTF-8";
+@keyframes slideDown {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+
+    height: 300px;
+    width: 100vw;
+    background-color: black;
+    background-image: url('../imagens/logo_ivolution.PNG');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.menu {
+    position: relative;
+    background-color: black;
+    width: 100vw;
+    margin: auto;
+}
+
+.menu_button {
+    text-align: center;
+    color: #20CCD0;
+}
+
+.menu_option {
+    position: absolute;
+    top: 100%;
+    display: none;
+    width: 100vw;
+}
+
+.link {
+    color: #20CCD0;
+    text-decoration: none;
+    position: relative;
+    width: 100vw;
+    text-align: center;
+    border-top: 1px solid #20CCD0;
+    padding: 10px;
+}
+.link1 {
+    color: #20CCD0;
+    text-decoration: none;
+}
+
+.link:hover {
+    background-color: #81c8c96e;
+}
+.link1:hover {
+    color: black;
+}
+
+.menu:hover .menu_option {
+    display: block;
+    animation: slideDown 0.5s ease;
+    background-color: black;
+}
+
+body {
+    background-color: black;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    font-size: 1.3em;
+}
+
+main {
+    padding: 5px;
+}
+
+h1, h2 {
+    background-image: linear-gradient(to right, #20cdd065, rgba(255, 255, 255, 0));
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 5px;
+    text-indent: .3em;
+    margin-left: -4px;
+}
+h2 {
+    font-size: .8em;
+    margin-bottom: -5px;
+}
+#primeiro_p {
+    margin-top: -5px;
+}
+
+p, main li {
+    line-height: 1.5em;
+    text-indent: 2em;
+    width: 380px;
+    margin: auto;
+    padding: 10px;
+}
+
+main {
+    background-color: #b4c7c796;
+    width: 500px;
+    margin: auto;
+}
+
